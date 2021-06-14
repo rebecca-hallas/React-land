@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 function Home () {
   return (
     <>
-
       <div className="flex justify-center">
         <h1 className="text-4xl m-10 font-mono font-bold">Welcome to React-land</h1>
       </div>
