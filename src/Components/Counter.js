@@ -15,7 +15,7 @@ function Counter() {
         </div>
         
         <div className="mt-12 col-start-2 col-span-2 row-start-2">
-          <p className="text-center">State: {count}</p>
+          <p className="text-center">High Score: {count}</p>
         </div>
         
         <div className="mt-6 col-start-2 col-span-2 row-start-3 text-center">
@@ -25,6 +25,7 @@ function Counter() {
       </div>
     </>
   );
+  
 }
 
 export default Counter;
