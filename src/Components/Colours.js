@@ -5,13 +5,13 @@ function Colours() {
 
   return (
     <>
-      <h1 className="text-4xl mt-16 mb-3 font-mono font-bold text-center">Colours</h1>
+      <h1 className="text-4xl mt-16 mb-3 font-bold text-center">Colours</h1>
       <h2 className="text-lg mb-12 font-bold text-center">Fun with useState()</h2>
 
       <div className="grid grid-cols-9 grid-rows-4">
         
         <div className="col-start-5 col-span-1 row-start-1">
-          <div style={colour} />
+          <div className="ml-6 border-2 border-white" style={colour} />
         </div>
         
         <div className="mt-6 col-start-2 col-span-1 row-start-3 text-center">
