@@ -19,9 +19,9 @@ function Home () {
         </div>
 
       <div className="col-start-4 row-start-2 col-span-1">
-        <Link to="/Data">
+        <Link to="/Colours">
           <button className="rounded-md bg-pink-400 hover:bg-pink-500 border-2 border-white p-3 text-white">
-            <h1 className="font-bold font-mono">Data</h1>
+            <h1 className="font-bold font-mono">Colours</h1>
             </button>
           </Link>
         </div>
