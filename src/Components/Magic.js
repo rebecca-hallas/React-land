@@ -6,7 +6,7 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (10 - 1 + 1) + min); 
   }
 
-function Maths() {
+function Magic() {
   const [number, setNumber] = useState('?')
 
   return (
@@ -30,4 +30,4 @@ function Maths() {
   
 }
 
-export default Maths;
+export default Magic;

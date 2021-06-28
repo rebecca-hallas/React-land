@@ -33,7 +33,7 @@ function Home() {
         <div className="col-start-6 row-start-2 col-span-1">
           <Link to="/Maths">
             <button className="rounded-md bg-pink-400 hover:bg-pink-500 border-2 border-white p-3 text-white">
-              <h1 className="font-bold font-mono">Maths</h1>
+              <h1 className="font-bold font-mono">Magic</h1>
             </button>
           </Link>
         </div>
