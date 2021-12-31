@@ -3,14 +3,14 @@ import Counter from './Counter'
 import Colours from './Colours'
 import Magic from './Magic'
 
-import Home from './Home'
+import Homepage from './Homepage'
 import { Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Route exact path='/' component={Home} />
+      <Route exact path='/' component={Homepage} />
       <Route path='/Counter' component={Counter} />
       <Route path='/Colours' component={Colours} />
       <Route path='/Magic' component={Magic} />
