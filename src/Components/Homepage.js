@@ -1,6 +1,7 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import FashionHome from './FashionHome'
 // IMAGES:
 import logo from '../images/voguelogo.png'
 
@@ -12,7 +13,7 @@ function Homepage() {
     <div className="border-solid border-black border-t-8">
         <div className="grid grid-rows-1 grid-cols-3">
             <div className="col-start-1 col-span-1">
-                <img src={logo} alt="Vogue logo" className="h-36 w-102 mt-5 mb-4"/>
+                <img src={logo} alt="Vogue logo" className="h-36 w-102 mt-5 mb-4" />
             </div>
             <div className="col-start-3 col-span-1">
                 <div className="dropdown">
@@ -29,27 +30,17 @@ function Homepage() {
         </div>
     </div>
 
-    <div className="flex justify-leftgap-8 text-center text-l border-solid border-slate-300 border-t-2">
-        <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-16 font-semibold cursor-pointer">FASHION</a>
-        <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">BEAUTY</a>
+    <div className="flex justify-left gap-8 text-center text-l border-solid border-slate-300 border-t-2">
+        <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-16 font-semibold cursor-pointer">FASHION</p>
+    <Link to="/Beauty">
+        <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">BEAUTY</p>
+    </Link>
         <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">CULTURE</a>
         <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">LIFESTYLE</a>
         <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">SHOPPING</a>
     </div>
 
-    <div className="flex justify-leftgap-8 text-center text-l border-solid border-black border-b-2"/>
-    <img className="h-20 w-52 ml-12" src="images/fashion.png"/>
-
-    <div className="border-solid border-black border-t-2 mt-12"/>
-    <img className="h-20 w-52 ml-12" src="images/culture.png"/>
-
-    <div className="grid grid-rows-1 grid-cols-4">
-        <div className="col-start-3 col-span-1 ml-3 mr-3">
-            <img src="images/emilyinparis.jpg"></img>
-        </div>
-    </div>
-
-<div className="mb-12"/>
+<div className="border-solid border-slate-300 border-t-2"/>
 
 </>
   )
