@@ -1,12 +1,13 @@
 import React from 'react';
 import beautytitle from '../images/beautytitle.png'
-import Homepage from './Homepage';
+import Header from './Header';
 
 function Beauty() {
 
   return (
     <>
-    <Homepage />
+    <Header />
+    <div className="border-solid border-slate-300 border-t-2"/>
     <div className="grid grid-rows-2 grid-cols-3">
         <div className="col-start-1 col-span-1 items-center" />
         <div className="col-start-2 col-span-1 items-center flex items-center justify-center">

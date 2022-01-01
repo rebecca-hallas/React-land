@@ -1,22 +1,16 @@
 import '../Styles.css';
 import FashionHome from './FashionHome'
-import Colours from './Colours'
-import Magic from './Magic'
 import Beauty from './Beauty';
-
-import Homepage from './Homepage'
+import Header from './Header'
 import { Route } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Route exact path='/' component={Homepage} />
+      <Route exact path='/Home' component={Header} />
+      <Route exact path='/Home' component={FashionHome} />
       <Route path='/Beauty' component={Beauty} />
-      <Route path='/FashionHome' component={FashionHome} />
-      <Route path='/Colours' component={Colours} />
-      <Route path='/Magic' component={Magic} />
-
     </>
   );
 }

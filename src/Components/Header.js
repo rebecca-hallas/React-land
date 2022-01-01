@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Route } from 'react-router-dom'
-import FashionHome from './FashionHome'
+// import { Route } from 'react-router-dom'
 // IMAGES:
 import logo from '../images/voguelogo.png'
 
-function Homepage() {
+function Header() {
 
   return (
     <>
@@ -40,10 +39,8 @@ function Homepage() {
         <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">SHOPPING</a>
     </div>
 
-<div className="border-solid border-slate-300 border-t-2"/>
-
 </>
   )
 }
     
-export default Homepage
+export default Header
