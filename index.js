@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom'
 import './index.css';
-import App from './Components/App';
+import store from './store'
+import App from './src/Components/App';
 
 ReactDOM.render(
+  <Provider store={store}>
   <Router>
     <App />
-  </Router>,
+  </Router>
+  </Provider>,
   document.getElementById('root')
 );
