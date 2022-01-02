@@ -1,12 +1,12 @@
 const express = require('express')
-const beautyDb = require('../db/beauty')
+const fashionDb = require('../db/fashion')
 const router = express.Router()
 
-router.get('/Beauty', (req, res) => {
-    const beauty = req.query.beauty ? req.query.beauty : 'all'
+router.get('/Fashion', (req, res) => {
+    const fashion = req.query.fashion ? req.query.fashion : 'all'
   
-    console.log('beauty: ', beauty)
-    beautyDb.generalQuery(beauty)
+    console.log('fashion: ', fashion)
+    fashionDb.generalQuery(fashion)
       .then(result => {
         res.status(200).json(result)
         return null

@@ -12,7 +12,9 @@ function Header() {
     <div className="border-solid border-black border-t-8">
         <div className="grid grid-rows-1 grid-cols-3">
             <div className="col-start-1 col-span-1">
+                <Link to='/Home'>
                 <img src={logo} alt="Vogue logo" className="h-36 w-102 mt-5 mb-4" />
+                </Link>
             </div>
             <div className="col-start-3 col-span-1">
                 <div className="dropdown">
@@ -30,13 +32,22 @@ function Header() {
     </div>
 
     <div className="flex justify-left gap-8 text-center text-l border-solid border-slate-300 border-t-2">
+
+    <Link to="/Fashion">
         <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-16 font-semibold cursor-pointer">FASHION</p>
+    </Link>
     <Link to="/Beauty">
         <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">BEAUTY</p>
     </Link>
-        <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">CULTURE</a>
-        <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">LIFESTYLE</a>
-        <a className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">SHOPPING</a>
+    <Link to="/Culture">
+        <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">CULTURE</p>
+    </Link>
+    <Link to="/Lifestyle">
+        <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">LIFESTYLE</p>
+    </Link>
+    <Link to="/Shopping">
+        <p className="text-sm hover:text-red-500 mt-5 mb-5 ml-10 font-semibold cursor-pointer">SHOPPING</p>
+    </Link>
     </div>
 
 </>
